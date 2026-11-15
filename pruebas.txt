@@ -1,0 +1,16 @@
+PLAN DE PRUEBAS — HelpDesk
+
+Caso 1: Transición de estado válida en POO
+- Ejecutar: python core_modelos.py
+- Resultado esperado: El ticket Hardware pasa de "Abierto" a "En Proceso" sin excepción.
+- Resultado obtenido: OK.
+
+Caso 2: Transición de estado inválida en POO
+- Ejecutar: python core_modelos.py
+- Resultado esperado: Al intentar pasar de "Cerrado" a "En Proceso", se lanza EstadoInvalidoError.
+- Resultado obtenido: OK (excepción capturada en consola).
+
+Caso 3: Validación de campos vacíos en formulario web
+- Acceder a /incidencias/nueva/ y enviar formulario sin título.
+- Resultado esperado: Django muestra error de validación "Este campo es obligatorio".
+- Resultado obtenido: OK.
